@@ -30,3 +30,8 @@ To open a live log of connections to port 5900:
 ```bash
 $ ./live-log.sh
 ```
+
+Once you have a logfile, you can check source IPs with:
+```bash
+$ ./get-src-ips.sh log.cap
+```
