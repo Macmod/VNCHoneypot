@@ -1,2 +1,2 @@
 #!/bin/sh
-tcpdump port 5900 -w log.cap
+tcpdump port 5900 -w $1

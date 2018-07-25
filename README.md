@@ -14,8 +14,19 @@ This repository is a tutorial and set of scripts needed to make a very simple VN
 ```bash
 $ sudo x11vnc -nopw -forever -shared -dontdisconnect &
 ```
-6. Run in host:
+6. Run in host (in separate windows):
+
+To forward your machine's port 5900 to the guest:
 ```bash
 $ ./forward.sh <GUEST STATIC IP>
-$ sudo ./tcpdump.sh
+```
+
+To dump all traffic on port 5900:
+```bash
+$ sudo ./tcpdump.sh log.cap
+```
+
+To open a live log of connections to port 5900:
+```bash
+$ ./live-log.sh
 ```
